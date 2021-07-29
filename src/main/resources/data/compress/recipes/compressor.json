@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "compressor",
+    "pattern": [
+        "iBi",
+        "/ /",
+        "###"
+    ],
+    "key": {
+        "B": {
+            "item": "minecraft:iron_block"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "#": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "compress:compressor",
+        "count": 1
+    }
+}

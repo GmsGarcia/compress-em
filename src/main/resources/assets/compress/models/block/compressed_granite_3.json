@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+      "particle": "compress:block/compressed_granite_3",
+      "north": "compress:block/compressed_granite_3",
+      "south": "compress:block/compressed_granite_3",
+      "east": "compress:block/compressed_granite_3",
+      "west": "compress:block/compressed_granite_3",
+      "up": "compress:block/compressed_granite_3",
+      "down": "compress:block/compressed_granite_3"
+    }
+}

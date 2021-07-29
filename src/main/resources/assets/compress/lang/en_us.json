@@ -1,0 +1,55 @@
+{
+    "itemGroup.compress.items": "Compressed Items",
+    "itemGroup.compress.blocks": "Compressed Blocks",
+
+    "item.compress.alberto_xenowra": "Xenowra",
+    "block.compress.compressor": "Compressor",
+
+    "block.compress.compressed_dirt_1": "Compressed Dirt (x1)",
+    "block.compress.compressed_dirt_2": "Compressed Dirt (x2)",
+    "block.compress.compressed_dirt_3": "Compressed Dirt (x3)",
+    "block.compress.compressed_dirt_4": "Compressed Dirt (x4)",
+    "block.compress.compressed_dirt_5": "Compressed Dirt (x5)",
+
+    "block.compress.compressed_cobblestone_1": "Compressed Cobblestone (x1)",
+    "block.compress.compressed_cobblestone_2": "Compressed Cobblestone (x2)",
+    "block.compress.compressed_cobblestone_3": "Compressed Cobblestone (x3)",
+    "block.compress.compressed_cobblestone_4": "Compressed Cobblestone (x4)",
+    "block.compress.compressed_cobblestone_5": "Compressed Cobblestone (x5)",
+
+    "block.compress.compressed_stone_1": "Compressed Stone (x1)",
+    "block.compress.compressed_stone_2": "Compressed Stone (x2)",
+    "block.compress.compressed_stone_3": "Compressed Stone (x3)",
+    "block.compress.compressed_stone_4": "Compressed Stone (x4)",
+    "block.compress.compressed_stone_5": "Compressed Stone (x5)",
+
+    "block.compress.compressed_andesite_1": "Compressed Andesite (x1)",
+    "block.compress.compressed_andesite_2": "Compressed Andesite (x2)",
+    "block.compress.compressed_andesite_3": "Compressed Andesite (x3)",
+    "block.compress.compressed_andesite_4": "Compressed Andesite (x4)",
+    "block.compress.compressed_andesite_5": "Compressed Andesite (x5)",
+
+    "block.compress.compressed_diorite_1": "Compressed Diorite (x1)",
+    "block.compress.compressed_diorite_2": "Compressed Diorite (x2)",
+    "block.compress.compressed_diorite_3": "Compressed Diorite (x3)",
+    "block.compress.compressed_diorite_4": "Compressed Diorite (x4)",
+    "block.compress.compressed_diorite_5": "Compressed Diorite (x5)",
+
+    "block.compress.compressed_granite_1": "Compressed Granite (x1)",
+    "block.compress.compressed_granite_2": "Compressed Granite (x2)",
+    "block.compress.compressed_granite_3": "Compressed Granite (x3)",
+    "block.compress.compressed_granite_4": "Compressed Granite (x4)",
+    "block.compress.compressed_granite_5": "Compressed Granite (x5)",
+
+    "block.compress.compressed_netherrack_1": "Compressed Netherrack (x1)",
+    "block.compress.compressed_netherrack_2": "Compressed Netherrack (x2)",
+    "block.compress.compressed_netherrack_3": "Compressed Netherrack (x3)",
+    "block.compress.compressed_netherrack_4": "Compressed Netherrack (x4)",
+    "block.compress.compressed_netherrack_5": "Compressed Netherrack (x5)",
+
+    "block.compress.compressed_end_stone_1": "Compressed End Stone (x1)",
+    "block.compress.compressed_end_stone_2": "Compressed End Stone (x2)",
+    "block.compress.compressed_end_stone_3": "Compressed End Stone (x3)",
+    "block.compress.compressed_end_stone_4": "Compressed End Stone (x4)",
+    "block.compress.compressed_end_stone_5": "Compressed End Stone (x5)"
+}

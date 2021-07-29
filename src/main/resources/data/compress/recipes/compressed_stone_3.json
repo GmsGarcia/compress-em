@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "compressed_stone_three",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "compress:compressed_stone_2"
+        }
+    },
+    "result": {
+        "item": "compress:compressed_stone_3",
+        "count": 1
+    }
+}

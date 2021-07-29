@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "compressed_granite_three",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "compress:compressed_granite_2"
+        }
+    },
+    "result": {
+        "item": "compress:compressed_granite_3",
+        "count": 1
+    }
+}
