@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+      "particle": "compress:block/compressed_gravel_5",
+      "north": "compress:block/compressed_gravel_5",
+      "south": "compress:block/compressed_gravel_5",
+      "east": "compress:block/compressed_gravel_5",
+      "west": "compress:block/compressed_gravel_5",
+      "up": "compress:block/compressed_gravel_5",
+      "down": "compress:block/compressed_gravel_5"
+    }
+}

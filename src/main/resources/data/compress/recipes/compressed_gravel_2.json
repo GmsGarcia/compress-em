@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "compressed_gravel_two",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "compress:compressed_gravel_1"
+        }
+    },
+    "result": {
+        "item": "compress:compressed_gravel_2",
+        "count": 1
+    }
+}

@@ -9,7 +9,7 @@ import net.minecraft.sound.BlockSoundGroup;
 public class CompressedDirt extends Block {
 
     public CompressedDirt() {
-        super(FabricBlockSettings.of(Material.STONE)
+        super(FabricBlockSettings.of(Material.SOIL)
                 .hardness(0.6f)
                 .resistance(0.8f)
                 .breakByTool(FabricToolTags.SHOVELS, 0)

@@ -11,6 +11,24 @@
     "block.compress.compressed_dirt_4": "Compressed Dirt (x4)",
     "block.compress.compressed_dirt_5": "Compressed Dirt (x5)",
 
+    "block.compress.compressed_sand_1": "Compressed Sand (x1)",
+    "block.compress.compressed_sand_2": "Compressed Sand (x2)",
+    "block.compress.compressed_sand_3": "Compressed Sand (x3)",
+    "block.compress.compressed_sand_4": "Compressed Sand (x4)",
+    "block.compress.compressed_sand_5": "Compressed Sand (x5)",
+
+    "block.compress.compressed_red_sand_1": "Compressed Red Sand (x1)",
+    "block.compress.compressed_red_sand_2": "Compressed Red Sand (x2)",
+    "block.compress.compressed_red_sand_3": "Compressed Red Sand (x3)",
+    "block.compress.compressed_red_sand_4": "Compressed Red Sand (x4)",
+    "block.compress.compressed_red_sand_5": "Compressed Red Sand (x5)",
+
+    "block.compress.compressed_gravel_1": "Compressed Gravel (x1)",
+    "block.compress.compressed_gravel_2": "Compressed Gravel (x2)",
+    "block.compress.compressed_gravel_3": "Compressed Gravel (x3)",
+    "block.compress.compressed_gravel_4": "Compressed Gravel (x4)",
+    "block.compress.compressed_gravel_5": "Compressed Gravel (x5)",
+
     "block.compress.compressed_cobblestone_1": "Compressed Cobblestone (x1)",
     "block.compress.compressed_cobblestone_2": "Compressed Cobblestone (x2)",
     "block.compress.compressed_cobblestone_3": "Compressed Cobblestone (x3)",

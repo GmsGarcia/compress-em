@@ -1,14 +1,19 @@
 package net.gmsgarcia.compress.registry;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.gmsgarcia.compress.blocks.*;
 
 import net.gmsgarcia.compress.blocks.block_entities.CompressorEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.FallingBlock;
+import net.minecraft.block.Material;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.*;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -29,6 +34,24 @@ public class blockRegistry {
     public static final Block COMPRESSED_DIRT_3 = new CompressedDirt();
     public static final Block COMPRESSED_DIRT_4 = new CompressedDirt();
     public static final Block COMPRESSED_DIRT_5 = new CompressedDirt();
+    /* SAND */
+    public static final Block COMPRESSED_SAND_1 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    public static final Block COMPRESSED_SAND_2 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    public static final Block COMPRESSED_SAND_3 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    public static final Block COMPRESSED_SAND_4 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    public static final Block COMPRESSED_SAND_5 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    /* RED SAND */
+    public static final Block COMPRESSED_RED_SAND_1 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    public static final Block COMPRESSED_RED_SAND_2 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    public static final Block COMPRESSED_RED_SAND_3 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    public static final Block COMPRESSED_RED_SAND_4 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    public static final Block COMPRESSED_RED_SAND_5 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).resistance(0.5f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.SAND));
+    /* GRAVEL */
+    public static final Block COMPRESSED_GRAVEL_1 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.6f).resistance(0.6f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.GRAVEL));
+    public static final Block COMPRESSED_GRAVEL_2 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.6f).resistance(0.6f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.GRAVEL));
+    public static final Block COMPRESSED_GRAVEL_3 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.6f).resistance(0.6f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.GRAVEL));
+    public static final Block COMPRESSED_GRAVEL_4 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.6f).resistance(0.6f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.GRAVEL));
+    public static final Block COMPRESSED_GRAVEL_5 = new FallingBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.6f).resistance(0.6f).breakByTool(FabricToolTags.SHOVELS, 0).sounds(BlockSoundGroup.GRAVEL));
     /* COBBLESTONE */
     public static final Block COMPRESSED_COBBLESTONE_1 = new CompressedCobblestone();
     public static final Block COMPRESSED_COBBLESTONE_2 = new CompressedCobblestone();
@@ -100,6 +123,66 @@ public class blockRegistry {
         Registry.register(Registry.ITEM, new Identifier("compress", "compressed_dirt_4"), new BlockItem(COMPRESSED_DIRT_4, new Item.Settings().group(COMPRESS_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("compress", "compressed_dirt_5"), new BlockItem(COMPRESSED_DIRT_5, new Item.Settings().group(COMPRESS_BLOCKS)));
 
+     /* ███████╗ █████╗ ███╗   ██╗██████╗
+        ██╔════╝██╔══██╗████╗  ██║██╔══██╗
+        ███████╗███████║██╔██╗ ██║██║  ██║
+        ╚════██║██╔══██║██║╚██╗██║██║  ██║
+        ███████║██║  ██║██║ ╚████║██████╔╝
+        ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝*/
+
+        // COMPRESSED SAND [Blocks]
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_sand_1"), COMPRESSED_SAND_1);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_sand_2"), COMPRESSED_SAND_2);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_sand_3"), COMPRESSED_SAND_3);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_sand_4"), COMPRESSED_SAND_4);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_sand_5"), COMPRESSED_SAND_5);
+        // COMPRESSED SAND [Items]
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_sand_1"), new BlockItem(COMPRESSED_SAND_1, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_sand_2"), new BlockItem(COMPRESSED_SAND_2, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_sand_3"), new BlockItem(COMPRESSED_SAND_3, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_sand_4"), new BlockItem(COMPRESSED_SAND_4, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_sand_5"), new BlockItem(COMPRESSED_SAND_5, new Item.Settings().group(COMPRESS_BLOCKS)));
+
+     /* ██████╗ ███████╗██████╗     ███████╗ █████╗ ███╗   ██╗██████╗
+        ██╔══██╗██╔════╝██╔══██╗    ██╔════╝██╔══██╗████╗  ██║██╔══██╗
+        ██████╔╝█████╗  ██║  ██║    ███████╗███████║██╔██╗ ██║██║  ██║
+        ██╔══██╗██╔══╝  ██║  ██║    ╚════██║██╔══██║██║╚██╗██║██║  ██║
+        ██║  ██║███████╗██████╔╝    ███████║██║  ██║██║ ╚████║██████╔╝
+        ╚═╝  ╚═╝╚══════╝╚═════╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝*/
+
+        // COMPRESSED RED SAND [Blocks]
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_red_sand_1"), COMPRESSED_RED_SAND_1);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_red_sand_2"), COMPRESSED_RED_SAND_2);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_red_sand_3"), COMPRESSED_RED_SAND_3);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_red_sand_4"), COMPRESSED_RED_SAND_4);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_red_sand_5"), COMPRESSED_RED_SAND_5);
+        // COMPRESSED RED SAND [Items]
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_red_sand_1"), new BlockItem(COMPRESSED_RED_SAND_1, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_red_sand_2"), new BlockItem(COMPRESSED_RED_SAND_2, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_red_sand_3"), new BlockItem(COMPRESSED_RED_SAND_3, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_red_sand_4"), new BlockItem(COMPRESSED_RED_SAND_4, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_red_sand_5"), new BlockItem(COMPRESSED_RED_SAND_5, new Item.Settings().group(COMPRESS_BLOCKS)));
+
+      /* ██████╗ ██████╗  █████╗ ██╗   ██╗███████╗██╗
+        ██╔════╝ ██╔══██╗██╔══██╗██║   ██║██╔════╝██║
+        ██║  ███╗██████╔╝███████║██║   ██║█████╗  ██║
+        ██║   ██║██╔══██╗██╔══██║╚██╗ ██╔╝██╔══╝  ██║
+        ╚██████╔╝██║  ██║██║  ██║ ╚████╔╝ ███████╗███████╗
+         ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚══════╝*/
+
+        // COMPRESSED GRAVEL [Blocks]
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_gravel_1"), COMPRESSED_GRAVEL_1);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_gravel_2"), COMPRESSED_GRAVEL_2);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_gravel_3"), COMPRESSED_GRAVEL_3);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_gravel_4"), COMPRESSED_GRAVEL_4);
+        Registry.register(Registry.BLOCK, new Identifier("compress", "compressed_gravel_5"), COMPRESSED_GRAVEL_5);
+        // COMPRESSED GRAVEL [Items]
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_gravel_1"), new BlockItem(COMPRESSED_GRAVEL_1, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_gravel_2"), new BlockItem(COMPRESSED_GRAVEL_2, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_gravel_3"), new BlockItem(COMPRESSED_GRAVEL_3, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_gravel_4"), new BlockItem(COMPRESSED_GRAVEL_4, new Item.Settings().group(COMPRESS_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("compress", "compressed_gravel_5"), new BlockItem(COMPRESSED_GRAVEL_5, new Item.Settings().group(COMPRESS_BLOCKS)));
+
      /* ███████╗████████╗ ██████╗ ███╗   ██╗███████╗
         ██╔════╝╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝
         ███████╗   ██║   ██║   ██║██╔██╗ ██║█████╗
@@ -119,7 +202,6 @@ public class blockRegistry {
         Registry.register(Registry.ITEM, new Identifier("compress", "compressed_stone_3"), new BlockItem(COMPRESSED_STONE_3, new Item.Settings().group(COMPRESS_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("compress", "compressed_stone_4"), new BlockItem(COMPRESSED_STONE_4, new Item.Settings().group(COMPRESS_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("compress", "compressed_stone_5"), new BlockItem(COMPRESSED_STONE_5, new Item.Settings().group(COMPRESS_BLOCKS)));
-
 
       /* ██████╗ ██████╗ ██████╗ ██████╗ ██╗     ███████╗███████╗████████╗ ██████╗ ███╗   ██╗███████╗
         ██╔════╝██╔═══██╗██╔══██╗██╔══██╗██║     ██╔════╝██╔════╝╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝
