@@ -10,8 +10,8 @@ public class CompressedDirt extends Block {
 
     public CompressedDirt() {
         super(FabricBlockSettings.of(Material.SOIL)
-                .hardness(0.6f)
-                .resistance(0.8f)
+                .resistance(0.5f)
+                .hardness(0.5f)
                 .breakByTool(FabricToolTags.SHOVELS, 0)
                 .sounds(BlockSoundGroup.GRAVEL));
     }

@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
-    "group": "compressed_dirt_four",
+    "group": "compressed_netherrack_four",
     "ingredients": [
         {
             "item": "compress:compressed_netherrack_5"

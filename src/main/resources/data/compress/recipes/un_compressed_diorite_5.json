@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
-    "group": "compressed_dirt_four",
+    "group": "compressed_diorite_four",
     "ingredients": [
         {
             "item": "compress:compressed_diorite_5"

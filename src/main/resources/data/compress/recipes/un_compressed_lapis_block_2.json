@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "compressed_lapis_block_one",
+    "ingredients": [
+        {
+            "item": "compress:compressed_lapis_block_2"
+        }
+    ],
+    "result": {
+        "item": "compress:compressed_lapis_block_1",
+        "count": 9
+    }
+}

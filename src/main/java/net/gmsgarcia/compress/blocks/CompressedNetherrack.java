@@ -10,8 +10,8 @@ public class CompressedNetherrack extends Block {
 
     public CompressedNetherrack() {
         super(FabricBlockSettings.of(Material.STONE)
-                .hardness(0.4f)
                 .resistance(0.4f)
+                .hardness(0.4f)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 0)
                 .sounds(BlockSoundGroup.STONE));

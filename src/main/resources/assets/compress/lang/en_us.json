@@ -69,5 +69,102 @@
     "block.compress.compressed_end_stone_2": "Compressed End Stone (x2)",
     "block.compress.compressed_end_stone_3": "Compressed End Stone (x3)",
     "block.compress.compressed_end_stone_4": "Compressed End Stone (x4)",
-    "block.compress.compressed_end_stone_5": "Compressed End Stone (x5)"
+    "block.compress.compressed_end_stone_5": "Compressed End Stone (x5)",
+
+    "block.compress.compressed_amethyst_block_1": "Compressed Block Of Amethyst (x1)",
+    "block.compress.compressed_amethyst_block_2": "Compressed Block Of Amethyst (x2)",
+    "block.compress.compressed_amethyst_block_3": "Compressed Block Of Amethyst (x3)",
+    "block.compress.compressed_amethyst_block_4": "Compressed Block Of Amethyst (x4)",
+    "block.compress.compressed_amethyst_block_5": "Compressed Block Of Amethyst (x5)",
+
+    "block.compress.compressed_calcite_1": "Compressed Calcite (x1)",
+    "block.compress.compressed_calcite_2": "Compressed Calcite (x2)",
+    "block.compress.compressed_calcite_3": "Compressed Calcite (x3)",
+    "block.compress.compressed_calcite_4": "Compressed Calcite (x4)",
+    "block.compress.compressed_calcite_5": "Compressed Calcite (x5)",
+
+    "block.compress.compressed_cobbled_deepslate_1": "Compressed Cobbled Deepslate (x1)",
+    "block.compress.compressed_cobbled_deepslate_2": "Compressed Cobbled Deepslate (x2)",
+    "block.compress.compressed_cobbled_deepslate_3": "Compressed Cobbled Deepslate (x3)",
+    "block.compress.compressed_cobbled_deepslate_4": "Compressed Cobbled Deepslate (x4)",
+    "block.compress.compressed_cobbled_deepslate_5": "Compressed Cobbled Deepslate (x5)",
+
+    "block.compress.compressed_deepslate_1": "Compressed Deepslate (x1)",
+    "block.compress.compressed_deepslate_2": "Compressed Deepslate (x2)",
+    "block.compress.compressed_deepslate_3": "Compressed Deepslate (x3)",
+    "block.compress.compressed_deepslate_4": "Compressed Deepslate (x4)",
+    "block.compress.compressed_deepslate_5": "Compressed Deepslate (x5)",
+
+    "block.compress.compressed_dripstone_block_1": "Compressed Dripstone Block (x1)",
+    "block.compress.compressed_dripstone_block_2": "Compressed Dripstone Block (x2)",
+    "block.compress.compressed_dripstone_block_3": "Compressed Dripstone Block (x3)",
+    "block.compress.compressed_dripstone_block_4": "Compressed Dripstone Block (x4)",
+    "block.compress.compressed_dripstone_block_5": "Compressed Dripstone Block (x5)",
+
+    "block.compress.compressed_smooth_basalt_1": "Compressed Smooth Basalt (x1)",
+    "block.compress.compressed_smooth_basalt_2": "Compressed Smooth Basalt (x2)",
+    "block.compress.compressed_smooth_basalt_3": "Compressed Smooth Basalt (x3)",
+    "block.compress.compressed_smooth_basalt_4": "Compressed Smooth Basalt (x4)",
+    "block.compress.compressed_smooth_basalt_5": "Compressed Smooth Basalt (x5)",
+
+    "block.compress.compressed_tuff_1": "Compressed Tuff (x1)",
+    "block.compress.compressed_tuff_2": "Compressed Tuff (x2)",
+    "block.compress.compressed_tuff_3": "Compressed Tuff (x3)",
+    "block.compress.compressed_tuff_4": "Compressed Tuff (x4)",
+    "block.compress.compressed_tuff_5": "Compressed Tuff (x5)",
+
+    "block.compress.compressed_coal_block_1": "Compressed Block Of Coal (x1)",
+    "block.compress.compressed_coal_block_2": "Compressed Block Of Coal (x2)",
+    "block.compress.compressed_coal_block_3": "Compressed Block Of Coal (x3)",
+    "block.compress.compressed_coal_block_4": "Compressed Block Of Coal (x4)",
+    "block.compress.compressed_coal_block_5": "Compressed Block Of Coal (x5)",
+
+    "block.compress.compressed_copper_block_1": "Compressed Block Of Copper (x1)",
+    "block.compress.compressed_copper_block_2": "Compressed Block Of Copper (x2)",
+    "block.compress.compressed_copper_block_3": "Compressed Block Of Copper (x3)",
+    "block.compress.compressed_copper_block_4": "Compressed Block Of Copper (x4)",
+    "block.compress.compressed_copper_block_5": "Compressed Block Of Copper (x5)",
+
+    "block.compress.compressed_iron_block_1": "Compressed Block Of Iron (x1)",
+    "block.compress.compressed_iron_block_2": "Compressed Block Of Iron (x2)",
+    "block.compress.compressed_iron_block_3": "Compressed Block Of Iron (x3)",
+    "block.compress.compressed_iron_block_4": "Compressed Block Of Iron (x4)",
+    "block.compress.compressed_iron_block_5": "Compressed Block Of Iron (x5)",
+
+    "block.compress.compressed_lapis_block_1": "Compressed Block Of Lapis Lazuli (x1)",
+    "block.compress.compressed_lapis_block_2": "Compressed Block Of Lapis Lazuli (x2)",
+    "block.compress.compressed_lapis_block_3": "Compressed Block Of Lapis Lazuli (x3)",
+    "block.compress.compressed_lapis_block_4": "Compressed Block Of Lapis Lazuli (x4)",
+    "block.compress.compressed_lapis_block_5": "Compressed Block Of Lapis Lazuli (x5)",
+
+    "block.compress.compressed_redstone_block_1": "Compressed Block Of Redstone (x1)",
+    "block.compress.compressed_redstone_block_2": "Compressed Block Of Redstone (x2)",
+    "block.compress.compressed_redstone_block_3": "Compressed Block Of Redstone (x3)",
+    "block.compress.compressed_redstone_block_4": "Compressed Block Of Redstone (x4)",
+    "block.compress.compressed_redstone_block_5": "Compressed Block Of Redstone (x5)",
+
+    "block.compress.compressed_gold_block_1": "Compressed Block Of Gold (x1)",
+    "block.compress.compressed_gold_block_2": "Compressed Block Of Gold (x2)",
+    "block.compress.compressed_gold_block_3": "Compressed Block Of Gold (x3)",
+    "block.compress.compressed_gold_block_4": "Compressed Block Of Gold (x4)",
+    "block.compress.compressed_gold_block_5": "Compressed Block Of Gold (x5)",
+
+    "block.compress.compressed_diamond_block_1": "Compressed Block Of Diamond (x1)",
+    "block.compress.compressed_diamond_block_2": "Compressed Block Of Diamond (x2)",
+    "block.compress.compressed_diamond_block_3": "Compressed Block Of Diamond (x3)",
+    "block.compress.compressed_diamond_block_4": "Compressed Block Of Diamond (x4)",
+    "block.compress.compressed_diamond_block_5": "Compressed Block Of Diamond (x5)",
+
+    "block.compress.compressed_emerald_block_1": "Compressed Block Of Emerald (x1)",
+    "block.compress.compressed_emerald_block_2": "Compressed Block Of Emerald (x2)",
+    "block.compress.compressed_emerald_block_3": "Compressed Block Of Emerald (x3)",
+    "block.compress.compressed_emerald_block_4": "Compressed Block Of Emerald (x4)",
+    "block.compress.compressed_emerald_block_5": "Compressed Block Of Emerald (x5)",
+
+    "block.compress.ruby_block": "Block Of Ruby",
+    "block.compress.compressed_ruby_block_1": "Compressed Block Of Ruby (x1)",
+    "block.compress.compressed_ruby_block_2": "Compressed Block Of Ruby (x2)",
+    "block.compress.compressed_ruby_block_3": "Compressed Block Of Ruby (x3)",
+    "block.compress.compressed_ruby_block_4": "Compressed Block Of Ruby (x4)",
+    "block.compress.compressed_ruby_block_5": "Compressed Block Of Ruby (x5)"
 }

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "compressed_amethyst_block_two",
+    "ingredients": [
+        {
+            "item": "compress:compressed_amethyst_block_3"
+        }
+    ],
+    "result": {
+        "item": "compress:compressed_amethyst_block_2",
+        "count": 9
+    }
+}

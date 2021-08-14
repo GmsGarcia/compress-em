@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "compressed_calcite_three",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "compress:compressed_calcite_2"
+        }
+    },
+    "result": {
+        "item": "compress:compressed_calcite_3",
+        "count": 1
+    }
+}

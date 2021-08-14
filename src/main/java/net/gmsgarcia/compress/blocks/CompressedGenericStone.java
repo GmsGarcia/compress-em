@@ -10,8 +10,8 @@ public class CompressedGenericStone extends Block {
 
     public CompressedGenericStone() {
         super(FabricBlockSettings.of(Material.STONE)
-                .hardness(6f)
-                .resistance(1.5f)
+                .resistance(6f)
+                .hardness(1.5f)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 0)
                 .sounds(BlockSoundGroup.STONE));

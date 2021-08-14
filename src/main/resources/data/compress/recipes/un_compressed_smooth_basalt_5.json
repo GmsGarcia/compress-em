@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "compressed_smooth_basalt_four",
+    "ingredients": [
+        {
+            "item": "compress:compressed_smooth_basalt_5"
+        }
+    ],
+    "result": {
+        "item": "compress:compressed_smooth_basalt_4",
+        "count": 9
+    }
+}

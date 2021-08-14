@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "compressed_dripstone_block_one",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dripstone_block"
+        }
+    },
+    "result": {
+        "item": "compress:compressed_dripstone_block_1",
+        "count": 1
+    }
+}

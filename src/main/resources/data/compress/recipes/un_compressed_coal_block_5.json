@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "compressed_coal_block_four",
+    "ingredients": [
+        {
+            "item": "compress:compressed_coal_block_5"
+        }
+    ],
+    "result": {
+        "item": "compress:compressed_coal_block_4",
+        "count": 9
+    }
+}

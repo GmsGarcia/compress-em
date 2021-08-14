@@ -25,8 +25,8 @@ public class CompressorRegistry extends BlockWithEntity {
 
     public CompressorRegistry() {
         super(FabricBlockSettings.of(Material.STONE)
-                .hardness(3.5f)
                 .resistance(3.5f)
+                .hardness(3.5f)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 0)
                 .sounds(BlockSoundGroup.STONE));

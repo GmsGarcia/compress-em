@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+      "particle": "compress:block/compressed_lapis_block_2",
+      "north": "compress:block/compressed_lapis_block_2",
+      "south": "compress:block/compressed_lapis_block_2",
+      "east": "compress:block/compressed_lapis_block_2",
+      "west": "compress:block/compressed_lapis_block_2",
+      "up": "compress:block/compressed_lapis_block_2",
+      "down": "compress:block/compressed_lapis_block_2"
+    }
+}

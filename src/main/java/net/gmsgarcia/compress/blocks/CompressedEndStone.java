@@ -10,8 +10,8 @@ public class CompressedEndStone extends Block {
 
     public CompressedEndStone() {
         super(FabricBlockSettings.of(Material.STONE)
-                .hardness(9f)
-                .resistance(3f)
+                .resistance(9f)
+                .hardness(3f)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 0)
                 .sounds(BlockSoundGroup.STONE));

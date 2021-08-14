@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+      "particle": "compress:block/compressed_tuff_1",
+      "north": "compress:block/compressed_tuff_1",
+      "south": "compress:block/compressed_tuff_1",
+      "east": "compress:block/compressed_tuff_1",
+      "west": "compress:block/compressed_tuff_1",
+      "up": "compress:block/compressed_tuff_1",
+      "down": "compress:block/compressed_tuff_1"
+    }
+}

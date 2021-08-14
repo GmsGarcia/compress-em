@@ -10,8 +10,8 @@ public class CompressedCobblestone extends Block {
 
     public CompressedCobblestone() {
         super(FabricBlockSettings.of(Material.STONE)
-                .hardness(6f)
-                .resistance(2f)
+                .resistance(6f)
+                .hardness(2f)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 0)
                 .sounds(BlockSoundGroup.STONE));

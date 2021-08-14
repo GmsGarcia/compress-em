@@ -2,22 +2,19 @@
     "type": "minecraft:crafting_shaped",
     "group": "compressor",
     "pattern": [
-        "iBi",
-        "/ /",
+        "#r#",
+        "#P#",
         "###"
     ],
     "key": {
-        "B": {
+        "P": {
             "item": "minecraft:iron_block"
         },
-        "i": {
-            "item": "minecraft:iron_ingot"
-        },
-        "/": {
-            "item": "minecraft:stick"
+        "r": {
+            "item": "minecraft:redstone"
         },
         "#": {
-            "item": "minecraft:stone"
+            "item": "minecraft:cobblestone"
         }
     },
     "result": {
