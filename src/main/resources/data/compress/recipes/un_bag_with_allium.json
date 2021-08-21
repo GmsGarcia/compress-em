@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "allium",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_allium"
+        }
+    ],
+    "result": {
+        "item": "minecraft:allium",
+        "count": 9
+    }
+}

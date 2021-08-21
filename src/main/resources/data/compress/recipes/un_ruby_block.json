@@ -1,15 +1,11 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "###",
-        "###",
-        "###"
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "group": "ruby",
+    "ingredients": [
+        {
             "item": "compress:ruby_block"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:ruby",
         "count": 9

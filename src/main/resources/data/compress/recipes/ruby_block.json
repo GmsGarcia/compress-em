@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "compressed_ruby_block",
+    "group": "ruby_block",
     "pattern": [
         "###",
         "###",

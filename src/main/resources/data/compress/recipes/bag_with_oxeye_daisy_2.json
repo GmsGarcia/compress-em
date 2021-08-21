@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bag_with_oxeye_daisy_2",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "compress:bag_with_oxeye_daisy"
+        }
+    },
+    "result": {
+        "item": "compress:bag_with_oxeye_daisy_2",
+        "count": 1
+    }
+}

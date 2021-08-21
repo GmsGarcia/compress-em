@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "blue_orchids",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_blue_orchids"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blue_orchid",
+        "count": 9
+    }
+}

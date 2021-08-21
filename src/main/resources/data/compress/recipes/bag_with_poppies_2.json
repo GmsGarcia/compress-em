@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bag_with_poppies_2",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "compress:bag_with_poppies"
+        }
+    },
+    "result": {
+        "item": "compress:bag_with_poppies_2",
+        "count": 1
+    }
+}

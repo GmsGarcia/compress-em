@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "cornflower",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_cornflower"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cornflower",
+        "count": 9
+    }
+}

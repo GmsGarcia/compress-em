@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bag_with_dandelions",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dandelion"
+        }
+    },
+    "result": {
+        "item": "compress:bag_with_dandelions",
+        "count": 1
+    }
+}

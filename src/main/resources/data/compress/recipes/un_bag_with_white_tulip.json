@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "white_tulip",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_white_tulip"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_tulip",
+        "count": 9
+    }
+}

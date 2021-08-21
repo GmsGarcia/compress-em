@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "oxeye_daisy",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_oxeye_daisy"
+        }
+    ],
+    "result": {
+        "item": "minecraft:oxeye_daisy",
+        "count": 9
+    }
+}

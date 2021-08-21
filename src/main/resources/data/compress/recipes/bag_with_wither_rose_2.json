@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bag_with_wither_rose_2",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "compress:bag_with_wither_rose"
+        }
+    },
+    "result": {
+        "item": "compress:bag_with_wither_rose_2",
+        "count": 1
+    }
+}

@@ -23,7 +23,7 @@ public class blockRegistry {
     // a public identifier for multiple parts of our bigger chest
     // public static final Identifier BOX = new Identifier(MOD_ID, "compressor");
 
-    public static final ItemGroup COMPRESS_BLOCKS = FabricItemGroupBuilder.build(new Identifier("compress", "blocks"), () -> new ItemStack(Blocks.COARSE_DIRT));
+    public static final ItemGroup COMPRESS_BLOCKS = FabricItemGroupBuilder.build(new Identifier("compress", "blocks"), () -> new ItemStack(Blocks.COBBLESTONE));
 
     public static final Block COMPRESSOR = new CompressorRegistry();
     public static BlockEntityType<CompressorEntity> COMPRESSOR_ENTITY;
@@ -193,6 +193,7 @@ public class blockRegistry {
     public static final Block COMPRESSED_TUFF_5 = new CompressedTuff();
 
     public static void registerBlocks() {
+
         // Register Compressor Block
         Registry.register(Registry.BLOCK, new Identifier("compress", "compressor"), COMPRESSOR);
         // Register Compressor BlockEntity

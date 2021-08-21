@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "potato",
+    "ingredients": [
+        {
+            "item": "compress:potato_basket"
+        }
+    ],
+    "result": {
+        "item": "potato",
+        "count": 9
+    }
+}
