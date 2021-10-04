@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "blaze_rod",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_blaze_rods"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blaze_rod",
+        "count": 9
+    }
+}

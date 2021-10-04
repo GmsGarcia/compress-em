@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "rotten_flesh",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_rotten_flesh"
+        }
+    ],
+    "result": {
+        "item": "minecraft:rotten_flesh",
+        "count": 9
+    }
+}

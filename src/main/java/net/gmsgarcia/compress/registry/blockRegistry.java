@@ -2,16 +2,13 @@ package net.gmsgarcia.compress.registry;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.gmsgarcia.compress.blocks.*;
 
-import net.gmsgarcia.compress.blocks.block_entities.CompressorEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.block.Material;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -24,9 +21,6 @@ public class blockRegistry {
     // public static final Identifier BOX = new Identifier(MOD_ID, "compressor");
 
     public static final ItemGroup COMPRESS_BLOCKS = FabricItemGroupBuilder.build(new Identifier("compress", "blocks"), () -> new ItemStack(Blocks.COBBLESTONE));
-
-    public static final Block COMPRESSOR = new CompressorRegistry();
-    public static BlockEntityType<CompressorEntity> COMPRESSOR_ENTITY;
 
     /* DIRT */
     public static final Block COMPRESSED_DIRT_1 = new CompressedDirt();
@@ -193,13 +187,6 @@ public class blockRegistry {
     public static final Block COMPRESSED_TUFF_5 = new CompressedTuff();
 
     public static void registerBlocks() {
-
-        // Register Compressor Block
-        Registry.register(Registry.BLOCK, new Identifier("compress", "compressor"), COMPRESSOR);
-        // Register Compressor BlockEntity
-        COMPRESSOR_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier("compress", "compressor"), FabricBlockEntityTypeBuilder.create(CompressorEntity::new, COMPRESSOR).build(null));
-        // Register Compressor Block's Item
-        Registry.register(Registry.ITEM, new Identifier("compress", "compressor"), new BlockItem(COMPRESSOR, new Item.Settings().group(COMPRESS_BLOCKS)));
 
      /* ██████╗ ██╗██████╗ ████████╗
         ██╔══██╗██║██╔══██╗╚══██╔══╝

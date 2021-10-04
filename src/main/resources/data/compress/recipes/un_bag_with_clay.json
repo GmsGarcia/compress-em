@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "clay",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_clay"
+        }
+    ],
+    "result": {
+        "item": "minecraft:clay_ball",
+        "count": 9
+    }
+}

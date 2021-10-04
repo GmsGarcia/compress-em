@@ -3,7 +3,6 @@
     "itemGroup.compress.blocks": "Compressed Blocks",
     "itemGroup.compress.food": "Compressed Food",
 
-    "item.compress.alberto_xenowra": "Xenowra",
     "block.compress.compressor": "Compressor",
 
     "block.compress.compressed_dirt_1": "Compressed Dirt (x1)",
@@ -169,47 +168,37 @@
     "block.compress.compressed_ruby_block_4": "Compressed Block Of Ruby (x4)",
     "block.compress.compressed_ruby_block_5": "Compressed Block Of Ruby (x5)",
 
-    "item.compress.bag_with_allium": "Bag With Allium",
-    "item.compress.bag_with_allium_2": "Big Bag With Allium",
-
+    "item.compress.bag_with_allium": "Bag With Alliums",
     "item.compress.bag_with_azure_bluet": "Bag With Azure Bluets",
-    "item.compress.bag_with_azure_bluet_2": "Big Bag With Azure Bluets",
-
     "item.compress.bag_with_blue_orchids": "Bag With Blue Orchids",
-    "item.compress.bag_with_blue_orchids_2": "Big Bag With Blue Orchids",
-
     "item.compress.bag_with_dandelions": "Bag With Dandelions",
-    "item.compress.bag_with_dandelions_2": "Big Bag With Dandelions",
-    
     "item.compress.bag_with_orange_tulip": "Bag With Orange Tulips",
-    "item.compress.bag_with_orange_tulip_2": "Big Bag With Orange Tulips",
-    
     "item.compress.bag_with_oxeye_daisy": "Bag With Oxeye Daisies",
-    "item.compress.bag_with_oxeye_daisy_2": "Big Bag With Oxeye Daisies",
-
     "item.compress.bag_with_poppies": "Bag With Poppies",
-    "item.compress.bag_with_poppies_2": "Big Bag With Poppies",
-
     "item.compress.bag_with_pink_tulip": "Bag With Pink Tulips",
-    "item.compress.bag_with_pink_tulip_2": "Big Bag With Pink Tulips",
-
     "item.compress.bag_with_red_tulip": "Bag With Red Tulips",
-    "item.compress.bag_with_red_tulip_2": "Big Bag With Red Tulips",
-
     "item.compress.bag_with_white_tulip": "Bag With White Tulips",
-    "item.compress.bag_with_white_tulip_2": "Big Bag With White Tulips",
-
     "item.compress.bag_with_cornflower": "Bag With Cornflowers",
-    "item.compress.bag_with_cornflower_2": "Big Bag With Cornflowers",
-
     "item.compress.bag_with_lily_of_the_valley": "Bag With Lily Of The Valley's",
-    "item.compress.bag_with_lily_of_the_valley_2": "Big Bag With Lily Of The Valley's",
-
     "item.compress.bag_with_wither_rose": "Bag With Wither Roses",
-    "item.compress.bag_with_wither_rose_2": "Big Bag With Wither Roses",
 
-    "block.compress.apple_basket": "Apple Basket",
-    "block.compress.potato_basket": "Potato Basket",
-    "block.compress.carrot_basket": "Carrot Basket",
-    "block.compress.beetroot_basket": "Beetroot Basket"
+    "item.compress.bag_with_rotten_flesh": "Bag With Rotten Flesh",
+    "item.compress.bag_with_bones": "Bag With Bones",
+    "item.compress.bag_with_arrows": "Bag With Arrows",
+    "item.compress.bag_with_spider_eyes": "Bag With Spider Eyes",
+    "item.compress.yarn_ball": "Yarn Ball",
+    "item.compress.bag_with_gunpowder": "Bag With Gunpowder",
+    "item.compress.bag_with_sugar": "Bag With Sugar",
+    "item.compress.bag_with_clay": "Bag With Clay",
+    "item.compress.bag_with_glowstone_dust": "Bag With Glowstone Dust",
+    "item.compress.bag_with_blaze_rods": "Bag With Blaze Rods",
+    "item.compress.bag_with_ender_pearls": "Bag With Ender Pearls",
+    "item.compress.bag_with_feathers": "Bag With Feathers",
+    "item.compress.bag_with_bone_meal": "Bag With Bone Meal",
+    "item.compress.bundle_of_sticks": "Bundle Of Sticks",
+
+    "block.compress.apple_basket": "Apple Basket (THIS ITEM WILL BE REMOVED SOON)",
+    "block.compress.potato_basket": "Potato Basket (THIS ITEM WILL BE REMOVED SOON)",
+    "block.compress.carrot_basket": "Carrot Basket (THIS ITEM WILL BE REMOVED SOON)",
+    "block.compress.beetroot_basket": "Beetroot Basket (THIS ITEM WILL BE REMOVED SOON)"
 }

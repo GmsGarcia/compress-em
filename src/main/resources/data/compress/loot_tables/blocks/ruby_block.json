@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "compress:compressed_ruby_block"
+          "name": "compress:ruby_block"
         }
       ],
       "conditions": [

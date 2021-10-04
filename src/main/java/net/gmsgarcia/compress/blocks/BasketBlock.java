@@ -22,6 +22,7 @@ public class BasketBlock extends Block {
                 .sounds(BlockSoundGroup.WOOD));
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         return VoxelShapes.cuboid(0.0f, 0.0f, 0f, 1.0f, 0.6875f, 1.0f);

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "glowstone_dust",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_glowstone_dust"
+        }
+    ],
+    "result": {
+        "item": "minecraft:glowstone_dust",
+        "count": 9
+    }
+}

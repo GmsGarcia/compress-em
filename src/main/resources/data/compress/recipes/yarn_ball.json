@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "yarn_ball",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "compress:yarn_ball",
+        "count": 1
+    }
+}

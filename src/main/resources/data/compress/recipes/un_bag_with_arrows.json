@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "arrow",
+    "ingredients": [
+        {
+            "item": "compress:bag_with_arrows"
+        }
+    ],
+    "result": {
+        "item": "minecraft:arrow",
+        "count": 9
+    }
+}
