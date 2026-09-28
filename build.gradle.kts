@@ -47,15 +47,27 @@ prism {
     }
 
     version("26.1") {
-        // One jar serves the whole 26.1.x family (26.1, 26.1.1, 26.1.2):
-        // same pack format, so same jar. This call only sets the *publishing*
-        // game-version list (Modrinth/CurseForge) -- it does not reach loader
-        // metadata. Runtime bounds live in the loader templates, which are not
-        // interchangeable because Fabric rejects Maven range syntax:
-        //   fabric.mod.json      ">=${minecraft_version} <26.2"
-        //   neoforge.mods.toml   "[${minecraft_version},26.2)"
-        // A bare "26.1" means EXACT on Fabric, and ">=26.1" alone would leak
-        // into 26.2.x. When a 26.2 target lands it gets its own block/bounds.
+        // SUPPORT POLICY: one jar per Minecraft MINOR line, covering every
+        // patch in it. 26.1.0/26.1.1/26.1.2 share pack format resource 84.0 /
+        // data 101.1, so a single jar serves all three and nothing needs
+        // rebuilding when Mojang ships another patch.
+        //
+        // Three places have to agree on that line, and only two are here:
+        //   1. minecraftVersions(...)  -- publishing list. Platforms require
+        //      explicit version strings, so this is a hardcoded list and must
+        //      be extended by hand when 26.1.3 ships. Nothing else fails
+        //      loudly if it is missed; users just cannot find the release.
+        //   2. fabric.mod.json         -- ">=26.1 <26.2"
+        //   3. neoforge.mods.toml      -- minecraft "[26.1,26.2)",
+        //                                neoforge "[26.1,)" (a literal, NOT
+        //                                ${neoforge_version} -- see the long
+        //                                comment in that file)
+        // Bounds are per-loader because Fabric rejects Maven range syntax:
+        // ">=" / "<" only, with a space, never "[1.21,2)".
+        //
+        // ">=26.1" alone would leak into 26.2.x, hence the <26.2 cap, and a
+        // bare "26.1" would be EXACT on Fabric, hence the >=. The 26.2 and
+        // 26.3 blocks below copy this shape, each with its own pack.mcmeta.
         minecraftVersions("26.1", "26.1.1", "26.1.2")
         accessWidener("versions/26.1/common/src/main/resources/compress.classtweaker")
         javaVersion = 25
@@ -63,6 +75,53 @@ prism {
             loaderVersion = "0.19.5"
             fabricApi("0.155.3+26.1.2")
         }
-        neoforge { loaderVersion = "26.1.2.109" }
+        neoforge {
+            // Compile target only. Deliberately the newest patch in the line,
+            // so the jar is built against the most recent 26.1 API. This value
+            // is NOT the runtime floor -- that lives as a literal in
+            // neoforge.mods.toml, because Prism would otherwise turn this
+            // exact string into a floor like "[26.1.2.112,)" and lock out
+            // 26.1.0/26.1.1, whose NeoForge builds sort below it.
+            loaderVersion = "26.1.2.112"
+        }
+    }
+
+    // 26.2. Pack format moves 84.0/101.1 -> 88.0/107.1, so this needs its own
+    // pack.mcmeta and its own common tree. NeoForge is stable here.
+    version("26.2") {
+        // See the 26.1 block above for what each of these three places does.
+        // Both ranges are the minor line, so future 26.2.x patches need only a
+        // new entry in this list, never a rebuild of the jar itself.
+        minecraftVersions("26.2")
+        accessWidener("versions/26.2/common/src/main/resources/compress.classtweaker")
+        javaVersion = 25
+        fabric {
+            loaderVersion = "0.19.5"
+            fabricApi("0.161.0+26.2")
+        }
+        neoforge {
+            loaderVersion = "26.2.0.88"
+        }
+    }
+
+    // 26.3. Pack format 97.1/121.0.
+    //
+    // CAVEAT: Minecraft 26.3 shipped 2026-09-15 and NeoForge has NOT cut a
+    // stable build for it yet -- 26.3.0.26-beta is the newest. This target
+    // therefore compiles against a beta loader and should be treated as
+    // provisional: the NeoForge floor in neoforge.mods.toml is a literal
+    // "[26.3,)" so a future 26.3.0.99 release drops straight in with no
+    // metadata change, but do not publish this jar as stable support.
+    version("26.3") {
+        minecraftVersions("26.3")
+        accessWidener("versions/26.3/common/src/main/resources/compress.classtweaker")
+        javaVersion = 25
+        fabric {
+            loaderVersion = "0.19.5"
+            fabricApi("0.161.0+26.3")
+        }
+        neoforge {
+            loaderVersion = "26.3.0.26-beta"
+        }
     }
 }

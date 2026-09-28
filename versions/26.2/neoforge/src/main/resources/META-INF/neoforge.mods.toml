@@ -1,0 +1,49 @@
+modLoader = "javafml"
+loaderVersion = "${neoforge_loader_version_range}"
+# FML reads these from the TOP LEVEL of the file, not from [[mods]]:
+# ModFileInfo's constructor does config.getConfigElement("license") on the
+# root config and throws "Missing license (<modfile>)" when it comes back
+# blank. logoFile is read the same way by ModInfo. NeoForge's own
+# neoforge-<ver>-universal.jar and minecraft-patched jar both declare them
+# here with no license inside [[mods]], which is the layout FML expects.
+license = "${license}"
+logoFile = "assets/compress/icon.png"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${version}"
+displayName = "${mod_name}"
+description = "${description}"
+authors = "${mod_author}"
+
+[[dependencies.compress]]
+modId = "neoforge"
+type = "required"
+# Deliberately NOT "${neoforge_version}". Prism feeds that from the
+# `neoforge { loaderVersion }` used to compile, which is pinned to one exact
+# build ("26.2.0.88"). Spelling that exact string as the floor locks out
+# every LOWER build in the line: NeoForge versions embed the Minecraft
+# version they target, so a 26.2.0.87 client runs a "26.2.0.87" NeoForge,
+# which sorts below "26.2.0.88". A pin also has to be rewritten every time
+# Mojang ships a new patch, which is what the per-minor-line policy avoids.
+#
+# The floor is therefore the whole 26.2 MINOR line. "[26.2,)" admits every
+# 26.2.x NeoForge because Maven ordering ranks a longer version above its own
+# prefix ("26.2.0.88" > "26.2"). The upper bound is the minecraft range's
+# job -- 26.3 ships a "26.3.<build>" NeoForge that satisfies this floor but
+# fails "[26.2,26.3)" below, so the pair still admits exactly the 26.2 line.
+#
+# A literal rather than "${minecraft_version}", because NeoForge's scheme is
+# its own: it drops the leading "1." and appends a build counter, so MC
+# 1.21.11 ships "21.11.45" while MC 26.2 ships "26.2.0.88". Mixing the two
+# numbering schemes produces a range that only appears to work.
+versionRange = "[26.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.compress]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${minecraft_version},26.3)"
+ordering = "NONE"
+side = "BOTH"

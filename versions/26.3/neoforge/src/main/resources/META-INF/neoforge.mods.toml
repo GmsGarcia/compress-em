@@ -1,0 +1,47 @@
+modLoader = "javafml"
+loaderVersion = "${neoforge_loader_version_range}"
+# FML reads these from the TOP LEVEL of the file, not from [[mods]]:
+# ModFileInfo's constructor does config.getConfigElement("license") on the
+# root config and throws "Missing license (<modfile>)" when it comes back
+# blank. logoFile is read the same way by ModInfo. NeoForge's own
+# neoforge-<ver>-universal.jar and minecraft-patched jar both declare them
+# here with no license inside [[mods]], which is the layout FML expects.
+license = "${license}"
+logoFile = "assets/compress/icon.png"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${version}"
+displayName = "${mod_name}"
+description = "${description}"
+authors = "${mod_author}"
+
+[[dependencies.compress]]
+modId = "neoforge"
+type = "required"
+# Deliberately NOT "${neoforge_version}", which is the single build this
+# target compiles against ("26.3.0.26-beta"). That would floor every user
+# out of any other 26.3 build.
+#
+# The floor is the whole 26.3 MINOR line, so "[26.3,)" admits every 26.3.x
+# NeoForge -- Maven ordering ranks a longer version above its own prefix, so
+# "26.3.0.99" > "26.3" even though 0.99 < 26. The upper bound is the
+# minecraft range's job: "[26.3,26.4)" below stops 26.4 leaking in.
+#
+# The floor intentionally carries no qualifier, which is what makes it work
+# for a line that is still on beta. Maven sorts a qualified build BELOW the
+# same version unqualified (26.3.0.26-beta < 26.3.0.26), so a floor written
+# as "[26.3.0.26-beta,)" would still match the eventual release -- but it
+# would also pin every 26.3 user to one exact build number, which is the
+# thing this whole line exists to avoid. When NeoForge cuts a stable 26.3,
+# nothing here needs changing.
+versionRange = "[26.3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.compress]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${minecraft_version},26.4)"
+ordering = "NONE"
+side = "BOTH"

@@ -5,8 +5,8 @@ All notable changes to Compress 'em are recorded here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-The 1.17.1 → 1.21.11 / 26.1 port is a **breaking change** (a full target and
-loader matrix change), hence 2.0.0.
+The 1.17.1 → 1.21.11 / 26.1 / 26.2 / 26.3 port is a **breaking change** (a full
+target and loader matrix change), hence 2.0.0.
 
 ## [2.0.0] - unreleased
 
@@ -16,7 +16,14 @@ loader matrix change), hence 2.0.0.
   since 1.14.6 but had no recipe at all, making it the only compressed item
   that could not be obtained or consumed. The 3×3 → 9-output rule matches all 23
   sibling pairs.
-- Fabric and NeoForge targets for Minecraft 1.21.11 and 26.1, built with Prism.
+- Fabric and NeoForge targets for Minecraft 1.21.11, 26.1, 26.2 and 26.3,
+  built with Prism. 26.3's NeoForge jar compiles against a beta loader, since
+  NeoForge has not cut a stable build for it yet, so treat it as provisional.
+- A one-jar-per-minor-line support policy. The 26.1 jar covers every 26.1.x
+  patch, the 26.2 jar every 26.2.x and so on, so a new Mojang patch releases
+  without a rebuild. The NeoForge floor in each `neoforge.mods.toml` is the
+  bare minor line (`[26.1,)`) rather than the exact build compiled against,
+  which previously locked 26.1.0 and 26.1.1 out of a jar that advertised them.
 
 ### Changed
 
@@ -35,6 +42,11 @@ loader matrix change), hence 2.0.0.
   `fabric.mod.json` declared `cc-by-sa-4.0`, dropping the NonCommercial term and
   contradicting both the `LICENSE` file and the README, which both state
   `CC-BY-NC-SA-4.0`. The built jar metadata now agrees with them.
+- 26.3 support required exactly one deliberate source divergence: that release
+  removed the block codec system outright, so `Block#CODEC` and `codec()` no
+  longer exist and the 26.3 copy of `CompressedFallingBlock` drops the `CODEC`
+  field the older lines still need to build. Every other file across the four
+  `common` trees stays byte-identical, which CI enforces by diff.
 
 ### Removed
 

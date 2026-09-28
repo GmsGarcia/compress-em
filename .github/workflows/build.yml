@@ -3,7 +3,7 @@
 # Replaces the 1.17-era workflow, which built a single Fabric-only jar on Java
 # 16. Two JDKs are installed: 25 runs the Gradle daemon (Prism's hard
 # requirement), and 21 is the compile toolchain for the 1.21.11 targets. The
-# 26.1 targets compile on 25.
+# 26.1, 26.2 and 26.3 targets compile on 25.
 
 name: build
 on: [pull_request, push]
@@ -14,18 +14,29 @@ concurrency:
 
 jobs:
   build:
-    name: build all four targets
+    name: build all targets
     runs-on: ubuntu-latest
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
 
-      # The two `common` trees are deliberate duplicates rather than a shared
-      # source set, so nothing but discipline keeps them in step. README
-      # documents exactly three files that may differ; any other difference
-      # means one target was edited without the other. This is a plain diff, it
-      # needs no JDK, and it fails long before the expensive build.
-      - name: verify the two common trees are in step
+      # The four `common` trees are deliberate duplicates rather than a shared
+      # source set, so nothing but this diff keeps them in step. It is a plain
+      # diff, needs no JDK, and fails long before the expensive build.
+      #
+      # The sanctioned differences are exactly these four, and nothing else may
+      # appear:
+      #   pack.mcmeta            -- per-target pack format ranges, one per line
+      #   compress.accesswidener -- 1.21.11 only; the 26.x targets use the
+      #                             classtweaker format instead
+      #   compress.classtweaker  -- 26.1/26.2/26.3 only
+      #   CompressedFallingBlock -- 26.3 only. 26.3 removed the block codec
+      #                             system outright, so that single class cannot
+      #                             compile against the 26.1/26.2 API. See the
+      #                             comment inside the 26.3 copy for the exact
+      #                             compiler errors, and keep any future
+      #                             divergence in that one file.
+      - name: verify the common trees are in step
         run: |
           diff -r \
             --exclude=pack.mcmeta \
@@ -33,6 +44,19 @@ jobs:
             --exclude=compress.classtweaker \
             versions/1.21.11/common/src/main \
             versions/26.1/common/src/main
+
+          # 26.2 shares 26.1's API, so it only needs the pack format excluded.
+          diff -r \
+            --exclude=pack.mcmeta \
+            versions/26.1/common/src/main \
+            versions/26.2/common/src/main
+
+          # 26.3 matches 26.1 apart from the one class its API deleted.
+          diff -r \
+            --exclude=pack.mcmeta \
+            --exclude=CompressedFallingBlock.java \
+            versions/26.1/common/src/main \
+            versions/26.3/common/src/main
 
       - name: validate gradle wrapper
         uses: gradle/wrapper-validation-action@v2
@@ -70,8 +94,8 @@ jobs:
           restore-keys: |
             gradle-${{ runner.os }}-
 
-      # Proves the four projects are wired to the right loader plugins and
-      # mapping channels. Cheap, and catches a misconfigured target long
+      # Proves the eight loader projects are wired to the right loader plugins
+      # and mapping channels. Cheap, and catches a misconfigured target long
       # before the jars are produced.
       - name: prism doctor
         run: ./gradlew prismDoctor --console=plain
@@ -80,7 +104,7 @@ jobs:
       # transformers (build/generated/prism/at/*_accesstransformer.cfg) during
       # the configuration phase, and `clean` in the same invocation deletes them
       # before createMinecraftArtifacts reads them, so NFRT exits 1 with
-      # NoSuchFileException and all four targets fail. Verified: `clean build`
+      # NoSuchFileException and every target fails. Verified: `clean build`
       # fails, `clean` then `build` as two invocations succeeds. This is a Prism
       # 0.6.0 ordering bug. A fresh runner has no build/ dir anyway, so there is
       # nothing to clean.

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:allium"
+  },
+  "result": {
+    "id": "compress:bag_with_allium",
+    "count": 1
+  }
+}

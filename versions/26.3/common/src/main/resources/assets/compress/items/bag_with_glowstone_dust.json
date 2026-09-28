@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "compress:item/bag_with_glowstone_dust"
+  }
+}

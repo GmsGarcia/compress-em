@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "compress:compressed_redstone_block_1",
+    "compress:compressed_redstone_block_2",
+    "compress:compressed_redstone_block_3",
+    "compress:compressed_redstone_block_4",
+    "compress:compressed_redstone_block_5",
+    "compress:compressed_gold_block_1",
+    "compress:compressed_gold_block_2",
+    "compress:compressed_gold_block_3",
+    "compress:compressed_gold_block_4",
+    "compress:compressed_gold_block_5",
+    "compress:compressed_diamond_block_1",
+    "compress:compressed_diamond_block_2",
+    "compress:compressed_diamond_block_3",
+    "compress:compressed_diamond_block_4",
+    "compress:compressed_diamond_block_5",
+    "compress:compressed_emerald_block_1",
+    "compress:compressed_emerald_block_2",
+    "compress:compressed_emerald_block_3",
+    "compress:compressed_emerald_block_4",
+    "compress:compressed_emerald_block_5"
+  ]
+}

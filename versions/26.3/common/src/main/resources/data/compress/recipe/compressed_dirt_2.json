@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "compress:compressed_dirt_1"
+  },
+  "result": {
+    "id": "compress:compressed_dirt_2",
+    "count": 1
+  }
+}

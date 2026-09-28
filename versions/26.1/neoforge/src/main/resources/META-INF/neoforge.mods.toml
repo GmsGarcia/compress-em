@@ -19,7 +19,32 @@ authors = "${mod_author}"
 [[dependencies.compress]]
 modId = "neoforge"
 type = "required"
-versionRange = "[${neoforge_version},)"
+# Deliberately NOT "${neoforge_version}". Prism feeds that from the
+# `neoforge { loaderVersion }` used to compile, which is pinned to the newest
+# patch in the line ("26.1.2.112"). Writing it here produced the floor
+# "[26.1.2.112,)", and NeoForge versions embed the Minecraft version they
+# target -- a 26.1.0 client runs a "26.1.0.<build>" NeoForge, which sorts
+# below that floor, so FML refused to load the mod on 26.1.0 and 26.1.1
+# while the minecraft range below still advertised them. A pin also has to be
+# rewritten every time Mojang ships a patch, which is the whole point of the
+# per-minor-line policy.
+#
+# The floor is therefore the whole 26.1 MINOR line. "[26.1,)" admits every
+# 26.1.x NeoForge because Maven ordering ranks a longer version above its own
+# prefix ("26.1.2.112" > "26.1"). Upper bound is the minecraft range's job --
+# 26.2 ships a "26.2.<build>" NeoForge that satisfies this floor, but fails
+# "[26.1,26.2)" below, so the pair still admits exactly the 26.1 family.
+#
+# A literal, not "${minecraft_version}": NeoForge's version scheme is its own.
+# It drops the leading "1." from the Minecraft version and appends its own
+# build counter, so MC 1.21.11 ships NeoForge "21.11.45" while MC 26.1.2
+# ships "26.1.2.112". Feeding the Minecraft string in here does still admit
+# the right builds, but only by accident -- "1.21.11" < "21.11.45" because
+# 1 < 21, and that same range would just as happily admit a 26.x NeoForge.
+# Spelling the line out keeps the two numbering schemes from being conflated
+# and states the actual intent. The 26.2 and 26.3 targets copy this block as
+# "[26.2,)" and "[26.3,)".
+versionRange = "[26.1,)"
 ordering = "NONE"
 side = "BOTH"
 

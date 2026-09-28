@@ -48,8 +48,15 @@ prism {
     // Minecraft classes. See common/README.md.
     sharedCommon()
 
-    // 26.1 also covers 26.1.1 and 26.1.2 -- one pack format, one target.
-    // Do not add a 26.1.2 target.
+    // One target per Minecraft MINOR line, never per patch:
+    //   26.1  covers 26.1, 26.1.1, 26.1.2
+    //   26.2  covers 26.2        (and any future 26.2.x)
+    //   26.3  covers 26.3        (and any future 26.3.x)
+    // Patches inside a line share a pack format, so one jar serves them all.
+    // Minors do NOT: 84.0/101.1 -> 88.0/107.1 -> 97.1/121.0, each with its own
+    // pack.mcmeta. Never add a 26.1.2 or 26.2.1 target.
     version("1.21.11") { common(); fabric(); neoforge() }
     version("26.1") { common(); fabric(); neoforge() }
+    version("26.2") { common(); fabric(); neoforge() }
+    version("26.3") { common(); fabric(); neoforge() }
 }

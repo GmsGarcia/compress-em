@@ -4,6 +4,19 @@
 
 Compress 'em lets you compress almost 60k blocks in just ONE!
 
+## Supported versions
+
+| Minecraft | Fabric | NeoForge |
+| --- | --- | --- |
+| 1.21.11 | yes | yes |
+| 26.1, 26.1.1, 26.1.2 | yes | yes |
+| 26.2 | yes | yes |
+| 26.3 | yes | beta loader only |
+
+One jar per Minecraft *minor* line: the 26.1 jar covers every 26.1.x patch, the
+26.2 jar every 26.2.x, and so on, so a new Mojang patch needs no rebuild.
+26.3 has no stable NeoForge release yet, so treat that jar as provisional.
+
 ## Recipes
 
 ![lol](https://media.discordapp.net/attachments/571421269740879887/869684362281615501/manually.png?width=1080&height=248)
@@ -21,7 +34,7 @@ including the JDKs themselves, is fetched automatically.
 > generated access transformers (`build/generated/prism/at/*_accesstransformer.cfg`)
 > during the *configuration* phase, and `clean` then deletes them before
 > `createMinecraftArtifacts` reads them, so NFRT dies with
-> `NoSuchFileException: ..._accesstransformer.cfg` and all four targets fail.
+> `NoSuchFileException: ..._accesstransformer.cfg` and every target fails.
 > This is a Prism 0.6.0 ordering bug, not a problem with this project. To force
 > a from-scratch build, run the two commands separately:
 >
@@ -30,7 +43,7 @@ including the JDKs themselves, is fetched automatically.
 > ./gradlew build
 > ```
 
-This produces four jars under `versions/*/*/build/libs/`.
+This produces eight jars under `versions/*/*/build/libs/`.
 
 ## Disclaimer
 
