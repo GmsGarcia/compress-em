@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:spider_eye"
+  },
+  "result": {
+    "id": "compress:bag_with_spider_eyes",
+    "count": 1
+  }
+}

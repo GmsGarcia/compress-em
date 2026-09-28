@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:glowstone_dust"
+  },
+  "result": {
+    "id": "compress:bag_with_glowstone_dust",
+    "count": 1
+  }
+}

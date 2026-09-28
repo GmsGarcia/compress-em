@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:pink_tulip"
+  },
+  "result": {
+    "id": "compress:bag_with_pink_tulip",
+    "count": 1
+  }
+}

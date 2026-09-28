@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:sugar"
+  },
+  "result": {
+    "id": "compress:bag_with_sugar",
+    "count": 1
+  }
+}

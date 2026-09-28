@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "compress:bag_with_dandelions"
+  ],
+  "result": {
+    "id": "minecraft:dandelion",
+    "count": 9
+  }
+}

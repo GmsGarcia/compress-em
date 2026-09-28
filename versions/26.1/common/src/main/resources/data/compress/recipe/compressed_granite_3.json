@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "compress:compressed_granite_2"
+  },
+  "result": {
+    "id": "compress:compressed_granite_3",
+    "count": 1
+  }
+}

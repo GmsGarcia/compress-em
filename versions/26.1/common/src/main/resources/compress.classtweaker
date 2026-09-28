@@ -1,0 +1,21 @@
+classTweaker	v1	official
+
+# Compress 'em registers two creative tabs and fills them through
+# CreativeModeTab.Builder#displayItems(...).
+#
+# 26.1 made CreativeModeTab$Output protected. DisplayItemsGenerator's only
+# method takes an Output parameter, so once Output is inaccessible the interface
+# cannot be implemented outside vanilla at all: javac rejects both an explicit
+# parameter type and a lambda whose type would have to be inferred. Vanilla is
+# unaffected because it builds its own tabs inside net.minecraft.world.item,
+# where "protected" also grants package access -- which is exactly why this is
+# easy to miss and only shows up when compiling a mod.
+#
+# There is no alternative route: Item.Properties has no tab(...) on either
+# loader, and 26.1 adds no tab-content registry.
+#
+# 1.21.11 declares Output public, so this entry is a no-op there. The two files
+# cannot be merged: 26.1 rejects the named namespace outright, and the header line
+# has to agree with the target's mapping channel. Prism turns whichever file is
+# configured into the NeoForge access transformer automatically.
+accessible	class	net/minecraft/world/item/CreativeModeTab$Output
