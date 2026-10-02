@@ -1,4 +1,4 @@
-[![](https://img.shields.io/discord/839440449147240489?color=5865F2&label=Discord&logo=Discord&logoColor=5865F2&style=for-the-badge)](https://discord.gg/VSgTpTGZ8A) [![](https://shields.io/badge/CurseForge-Click%20Here-F16436?logo=curseforge&style=for-the-badge&logoColor=F16436)](https://www.curseforge.com/minecraft/mc-mods/compress-em)
+[![](https://shields.io/badge/CurseForge-Click%20Here-F16436?logo=curseforge&style=for-the-badge&logoColor=F16436)](https://www.curseforge.com/minecraft/mc-mods/compress-em) [![](https://shields.io/badge/Modrinth-Click%20Here-00AF5C?logo=modrinth&style=for-the-badge&logoColor=00AF5C)](https://modrinth.com/mod/compress-em)
 
 # Compress 'em
 
