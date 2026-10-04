@@ -3,11 +3,13 @@ loaderVersion = "${neoforge_loader_version_range}"
 # FML reads these from the TOP LEVEL of the file, not from [[mods]]:
 # ModFileInfo's constructor does config.getConfigElement("license") on the
 # root config and throws "Missing license (<modfile>)" when it comes back
-# blank. logoFile is read the same way by ModInfo. NeoForge's own
+# blank. iconFile is read the same way by ModInfo. NeoForge's own
 # neoforge-<ver>-universal.jar and minecraft-patched jar both declare them
 # here with no license inside [[mods]], which is the layout FML expects.
 license = "${license}"
-logoFile = "assets/compress/icon.png"
+# iconFile, not logoFile: NeoForge 26.2 deprecated logoFile and warns on it
+# at startup. icon applies to a square mod icon, which this is.
+iconFile = "assets/compress/icon.png"
 
 [[mods]]
 modId = "${mod_id}"
